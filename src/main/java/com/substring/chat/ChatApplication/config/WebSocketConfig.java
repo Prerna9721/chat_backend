@@ -24,7 +24,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer{
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
 		// TODO Auto-generated method stub
 		registry.addEndpoint("/chat")
-		.setAllowedOrigins(AppConstants.FRONT_END_BASE_URL,"http://chat-app-orpin-eight-99.vercel.app")
+		.setAllowedOrigins(AppConstants.FRONT_END_BASE_URL)
 		.withSockJS();
 				
 	}
